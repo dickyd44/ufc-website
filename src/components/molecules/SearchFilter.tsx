@@ -31,7 +31,7 @@ export default function SearchFilter({ onSearch }: SearchFilterProps) {
         onChange={handleChange}
         placeholder="Search..."
       />
-      <select value={criteria} onChange={handleChangeCriteria}>
+      <select value={criteria} onChange={(e) => handleChangeCriteria(e)}>
         <option value="name">Name</option>
         <option value="email">Email</option>
         <option value="phone">Phone</option>

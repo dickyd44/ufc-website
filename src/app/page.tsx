@@ -2,6 +2,12 @@
 import SearchFilter from "@/components/molecules/SearchFilter";
 import { useState } from "react";
 
+interface DataItem {
+  name: string;
+  email: string;
+  phone: string;
+}
+
 export default function Home() {
   const [result, setResult] = useState<string[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
@@ -10,7 +16,7 @@ export default function Home() {
     setLoading(true);
 
     setTimeout(() => {
-      const dummyData = [
+      const dummyData: DataItem[] = [
         {
           name: "John Doe",
           email: "john.doe@example.com",
@@ -29,7 +35,7 @@ export default function Home() {
             .toLowerCase()
             .includes(query.toLowerCase())
         )
-        .map((item) => `${item.name} (${item.email}, ${item.phone})`);
+        .map((item: any) => item[criteria]);
 
       setResult(filteredResult);
       setLoading(false);
