@@ -77,7 +77,7 @@ export default function Navbar() {
 
   return (
     <div className={`flex justify-center`}>
-      <nav className="bg-light w-[90%] md:w-[95%] z-50 rounded-[5px] shadow-xl mt-5 max-sm:m-3.5 px-8 max-sm:ps-2 absolute">
+      <nav className="bg-light w-[90%] md:w-[95%] z-50 rounded-sm shadow-xl mt-5 max-sm:m-3.5 px-8 max-sm:ps-2 absolute">
         <div className="relative">
           <div className="h-16 xl:h-[4rem] md:h-20 flex justify-between items-center">
             {/* button */}

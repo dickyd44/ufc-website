@@ -38,27 +38,25 @@ export default function Trending() {
       </div>
 
       <div className="container">
-        <div className="grid grid-cols-8 gap-4 mt-14">
+        <div className="md:grid grid-cols-1 md:grid-cols-8 md:gap-4 mt-14">
           <div className="col-span-2 uppercase w-full border border-slate-200 rounded-sm shadow">
             <Image src={News1} alt="news-1" width={1000} />
             <div className="p-5">
-              <p className="text-sm font-bold text-red">
-                dana white&apos;s contender series
-              </p>
+              <p className="text-sm font-bold text-red">watch ufc</p>
               <p className="text-base font-bold">
-                week 1 result + scorecards dana white&apos;s contender series...
+                how to watch and stream match ufc 305: du plessis vs adesanya...
               </p>
             </div>
           </div>
 
-          <div className="col-span-4">
-            <div className="h-full flex uppercase border border-slate-200 rounded-sm shadow">
-              <div className="grid grid-cols-2">
-                <div className="col-span-1 w-full">
+          <div className="col-span-2 md:col-span-4 my-4 md:my-0">
+            <div className="h-full md:flex uppercase border border-slate-200 rounded-sm shadow">
+              <div className="grid grid-cols-1 md:grid-cols-2">
+                <div className="w-full">
                   <Image
                     src={News2}
                     alt="news-1"
-                    className="object-cover object-right h-full"
+                    className="object-cover md:object-center h-full"
                   />
                 </div>
                 <div className="p-5 h-full flex flex-col justify-center">
@@ -74,8 +72,13 @@ export default function Trending() {
             </div>
           </div>
 
-          <div className="col-span-2 uppercase w-full">
-            <Image src={News3} alt="news-1" width={1000} />
+          <div className="col-span-2 uppercase w-full h-full">
+            <Image
+              src={News3}
+              alt="news-1"
+              width={1000}
+              className="object-cover w-full h-full"
+            />
           </div>
         </div>
 
