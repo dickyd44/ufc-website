@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Arimo, DM_Sans, PT_Sans_Narrow } from "next/font/google";
 import "./globals.css";
-import { AppNavbar } from "@/layouts";
+import { AppFooter, AppNavbar } from "@/layouts";
 
 const arimo = PT_Sans_Narrow({
   subsets: ["latin"],
@@ -23,6 +23,7 @@ export default function RootLayout({
       <body className={arimo.className}>
         <AppNavbar />
         {children}
+        <AppFooter />
       </body>
     </html>
   );
