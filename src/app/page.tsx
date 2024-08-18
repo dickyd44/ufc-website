@@ -1,4 +1,4 @@
-import Main from "@/components/organisms/main";
+import Countdown from "@/components/organisms/main/countdown";
 import RoadTitle from "@/components/organisms/main/road-title";
 import Trending from "@/components/organisms/main/trending";
 import React from "react";
@@ -6,7 +6,7 @@ import React from "react";
 export default function Home() {
   return (
     <main>
-      <Main />
+      <Countdown />
       <Trending />
       <RoadTitle />
     </main>

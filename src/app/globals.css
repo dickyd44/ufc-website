@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slick-prev,
+.slick-next {
+  width: 40px;
+  height: 40px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.slick-prev {
+  left: 5px;
+}
+
+.slick-next {
+  right: 5px;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.info h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.info p {
+  font-size: 16px;
+  color: gray;
+}

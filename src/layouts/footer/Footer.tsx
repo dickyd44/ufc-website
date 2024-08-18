@@ -1,6 +1,9 @@
+"use client";
 import Image from "next/image";
 import UfcLogo from "/public/UFC_Logo.svg";
+import ArrowDown from "/public/arrow-down.svg";
 import Ultiman from "@/assets/footer/ultiman_logo_75.png";
+import { useState } from "react";
 
 const UFC = [
   {
@@ -71,24 +74,90 @@ const LEGAL = [
   },
 ];
 
+const WORLD = [
+  {
+    country: "Brazil",
+  },
+  {
+    country: "China",
+  },
+  {
+    country: "France",
+  },
+  {
+    country: "Japan",
+  },
+  {
+    country: "Korea",
+  },
+  {
+    country: "Latin America",
+  },
+  {
+    country: "Russia",
+  },
+  {
+    country: "USA Espanol",
+  },
+  {
+    country: "Indonesia",
+  },
+];
+
 export default function Footer() {
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownVisible((prev) => !prev);
+  };
+
   return (
     <div className="bg-dark">
-      <div className="container flex justify-between w-full min-h-[24rem] text-white py-5">
-        <div className="uppercase flex flex-col justify-between items-start">
+      <div className="container flex flex-col md:flex-row items-center md:items-stretch justify-around md:justify-between w-full min-h-[24rem] text-white py-5">
+        <div className="uppercase flex flex-col justify-between items-center md:items-start pb-8 border-b border-slate-300 md:border-none md:pb-0 w-full">
           <div className="flex items-center gap-5">
             <Image src={UfcLogo} alt="ufc-logo" width={90} />
-            <div>
+            <div className="relative flex items-center gap-1">
               <a href="#" className="text-sm font-bold">
                 ufc.com
               </a>{" "}
-              - <span className="text-sm font-bold">world</span>
+              -{" "}
+              <span
+                onClick={toggleDropdown}
+                className="cursor-pointer flex gap-1 items-start text-sm font-bold"
+              >
+                world{" "}
+                <Image
+                  src={ArrowDown}
+                  alt="arrow-down"
+                  width={18}
+                  height={18}
+                />
+              </span>
+              {/* Country Menu */}
+              {dropdownVisible && (
+                <div className="absolute left-0 top-full mt-1 w-[15rem] bg-white text-black py-2 px-4 rounded shadow-lg z-50">
+                  {WORLD.map((item, idx) => (
+                    <p
+                      key={idx}
+                      className="text-sm hover:bg-gray-200 cursor-pointer p-1 rounded"
+                    >
+                      {item.country}
+                    </p>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
-          <Image src={Ultiman} alt="ultiman" width={90} />
+          <Image
+            src={Ultiman}
+            alt="ultiman"
+            width={90}
+            className="hidden md:block"
+          />
         </div>
 
-        <div className="flex gap-8">
+        <div className="flex justify-center gap-8 w-full pb-8 border-b border-slate-300 md:border-none md:pb-0">
           <div>
             <h3 className="text-white text-bold">UFC</h3>
             {UFC.map((ufc, idx) => (
