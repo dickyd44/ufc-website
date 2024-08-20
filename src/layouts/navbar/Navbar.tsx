@@ -243,8 +243,8 @@ export default function Navbar() {
           <div className="hidden md:flex md:gap-4 items-center text-sm lg:text-base font-head font-medium">
             <div className="hidden h-auto lg:flex items-center md:gap-4 lg:gap-5 lg:text-sm font-body text-black text-sm">
               {listFirst.map((menu, index) => (
-                <div>
-                  <Link key={index} href={menu.link} className="max-w-full">
+                <div key={index}>
+                  <Link href={menu.link} className="max-w-full">
                     <p
                       onClick={() => handleItemClickFirst(index)}
                       className={`uppercase border-red hover:border-b-[2px] hover:smooth transition duration-200 max-2xl:text-[13px] ${
@@ -355,8 +355,8 @@ export default function Navbar() {
               className={`hidden h-auto lg:flex items-center md:gap-4 lg:gap-5 lg:text-sm font-body text-black text-sm`}
             >
               {listSecond.map((menu, index) => (
-                <div>
-                  <Link key={index} href={menu.link} className="max-w-full">
+                <div key={index}>
+                  <Link href={menu.link} className="max-w-full">
                     <p
                       onClick={() => handleItemClickSecond(index)}
                       className={`uppercase border-red hover:border-b-[2px] hover:smooth transition duration-200 max-2xl:text-[13px] ${
