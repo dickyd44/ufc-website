@@ -1,10 +1,10 @@
-import EventUpcoming from "@/components/organisms/events/upcoming";
+import EventsUpcoming from "@/components/organisms/events/EventsUpcoming";
 import React from "react";
 
 export default function Upcoming() {
   return (
     <main>
-      <EventUpcoming />
+      <EventsUpcoming />
     </main>
   );
 }
