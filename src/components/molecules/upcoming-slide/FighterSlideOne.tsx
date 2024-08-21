@@ -2,7 +2,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import "../../../app/globals.css";
+import "@/app/globals.css";
 import { Navigation } from "swiper/modules";
 
 import {

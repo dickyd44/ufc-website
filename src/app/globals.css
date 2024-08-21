@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.swiper-wrapper {
+  height: 150px;
+}
+
 /* Styles for navigation buttons */
 .swiper-button-next,
 .swiper-button-prev {
