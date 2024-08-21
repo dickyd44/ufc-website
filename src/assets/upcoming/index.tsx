@@ -2,10 +2,11 @@ import ForSale from "./for-sale.png";
 
 import UfcFightNight from "./logo/logo-ufc-fight-night.png";
 import UfcFightPass from "./logo/ufc-fight-pass-logo.png";
+import Ufc308logo from "./logo/ufc-308-logo.jpg";
 
 export { ForSale };
 
-export { UfcFightNight, UfcFightPass };
+export { UfcFightNight, UfcFightPass, Ufc308logo };
 
 import NewsUpcomingOne from "./news/UFC-307-Pereira-vs-Rountree-Announcement-HERO.jpg";
 import NewsUpcomingTwo from "./news/Callum-Walsh-Runowski.jpg";
@@ -64,6 +65,30 @@ import Rosas from "./fighter/noche-ufc/ROSAS_JR_RAUL_02-24.png";
 import Torres from "./fighter/noche-ufc/TORRES_MANUEL_02-24.png";
 import Zellhubner from "./fighter/noche-ufc/ZELLHUBER_DANIEL_02-24.png";
 
+// UFC 307
+import Pereira from "./fighter/ufc-307/PEREIRA_ALEX_BELT_06-29.png";
+import Rountree from "./fighter/ufc-307/ROUNTREE_KHALIL_12-09.png";
+import Aldo from "./fighter/ufc-307/ALDO_JOSE_05-04.png";
+import Bautista from "./fighter/ufc-307/BAUTISTA_MARIO_01-13.png";
+import Buckley from "./fighter/ufc-307/BUCKLEY_JOAQUIN_05-11.png";
+import Dolidze from "./fighter/ufc-307/DOLIDZE_ROMAN_06-29.png";
+import Evloev from "./fighter/ufc-307/EVLOEV_MOVSAR_01-20.png";
+import Holland from "./fighter/ufc-307/HOLLAND_KEVIN_06-01.png";
+import Sterling from "./fighter/ufc-307/STERLING_ALJAMAIN_04-13.png";
+import Thompson from "./fighter/ufc-307/THOMPSON_STEPHEN_12-16.png";
+
+// UFC 308
+import Holloway from "./fighter/ufc-308/HOLLOWAY_MAX_04-13.png";
+import Topuria from "./fighter/ufc-308/TOPURIA_ILIA_BELT-298.png";
+import Chimaev from "./fighter/ufc-308/CHIMAEV_KHAMZAT_10-30.png";
+import Whittaker from "./fighter/ufc-308/WHITTAKER_ROBERT_06-22.png";
+import Ankalaev from "./fighter/ufc-308/ANKALAEV_MAGOMED_01-13.png";
+import Gane from "./fighter/ufc-308/GANE_CIRYL_09-02.png";
+import Abus from "./fighter/ufc-308/MAGOMEDOV_ABUS_11-04.png";
+import Rakic from "./fighter/ufc-308/RAKIC_ALEKSANDAR_04-13.png";
+import Volkov from "./fighter/ufc-308/VOLKOV_ALEXANDER_06-22.png";
+import Brunno from "./fighter/ufc-308/FERREIRA_BRUNNO_01-13.png";
+
 export {
   Borshchev,
   Buzukja,
@@ -118,4 +143,30 @@ export {
   Rosas,
   Torres,
   Zellhubner,
+};
+
+export {
+  Pereira,
+  Rountree,
+  Aldo,
+  Bautista,
+  Buckley,
+  Dolidze,
+  Evloev,
+  Holland,
+  Sterling,
+  Thompson,
+};
+
+export {
+  Holloway,
+  Topuria,
+  Chimaev,
+  Whittaker,
+  Ankalaev,
+  Gane,
+  Abus,
+  Rakic,
+  Volkov,
+  Brunno,
 };

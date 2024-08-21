@@ -12,6 +12,8 @@ import FightNightTwo from "./ufc-fight-night/FightNightTwo";
 import FightNightThree from "./ufc-fight-night/FightNightThree";
 import FightNightFour from "./ufc-fight-night/FightNightFour";
 import { News15 } from "@/assets/trending/road-title";
+import FightNightFive from "./ufc-fight-night/FightNightFive";
+import FightNightSix from "./ufc-fight-night/FightNightSix";
 
 export default function EventsUpcoming() {
   return (
@@ -28,6 +30,8 @@ export default function EventsUpcoming() {
       <FightNightTwo />
       <FightNightFour />
       <FightNightThree />
+      <FightNightFive />
+      <FightNightSix />
 
       <div className="flex justify-center my-32">
         <div className="flex items-center justify-center uppercase w-52 h-16 shadow hover:bg-light cursor-pointer bg-white border border-slate-200">

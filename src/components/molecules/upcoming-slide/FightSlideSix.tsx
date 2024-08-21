@@ -7,18 +7,16 @@ import { Navigation } from "swiper/modules";
 
 import Image from "next/image";
 import {
-  Aoriqileng,
-  Bahamondes,
-  Borjas,
-  Chairez,
-  Merab,
-  Osbourne,
-  Ribovic,
-  Rodriguez,
-  Rosas,
-  SugaSean,
-  Torres,
-  Zellhubner,
+  Abus,
+  Ankalaev,
+  Brunno,
+  Chimaev,
+  Gane,
+  Holloway,
+  Rakic,
+  Topuria,
+  Volkov,
+  Whittaker,
 } from "@/assets/upcoming";
 
 type OnSlideChange = (index: number) => void;
@@ -27,41 +25,35 @@ interface FighterSlideProps {
   onSlideChange: OnSlideChange;
 }
 
-const SUGA_MERAB = [
+const TOPURIA_HOLLOWAY = [
   {
-    name: "SUGA VS MERAB",
-    fighter_one: SugaSean,
-    fighter_two: Merab,
+    name: "TOPURIA VS HOLLOWAY",
+    fighter_one: Holloway,
+    fighter_two: Topuria,
   },
   {
-    name: "RAUL VS RODRIGUEZ",
-    fighter_one: Rosas,
-    fighter_two: Rodriguez,
+    name: "CHIMAEV VS WHITTAKER",
+    fighter_one: Whittaker,
+    fighter_two: Chimaev,
   },
   {
-    name: "AORIQILENG VS BAHAMONDES",
-    fighter_one: Aoriqileng,
-    fighter_two: Bahamondes,
+    name: "ANKALAEV VS RAKIC",
+    fighter_one: Rakic,
+    fighter_two: Ankalaev,
   },
   {
-    name: "BORJAS VS CHAIREZ",
-    fighter_one: Borjas,
-    fighter_two: Chairez,
+    name: "GANE VS MAGOMEDOV",
+    fighter_one: Gane,
+    fighter_two: Abus,
   },
   {
-    name: "OSBOURNE VS RIBOVICS",
-    fighter_one: Osbourne,
-    fighter_two: Ribovic,
-  },
-
-  {
-    name: "TORRES VS ZELLHUBNER",
-    fighter_one: Torres,
-    fighter_two: Zellhubner,
+    name: "VOLKOV VS BRUNNO",
+    fighter_one: Volkov,
+    fighter_two: Brunno,
   },
 ];
 
-export default function FighterSlideFour({ onSlideChange }: FighterSlideProps) {
+export default function FighterSlideSix({ onSlideChange }: FighterSlideProps) {
   return (
     <Swiper
       navigation={true}
@@ -74,19 +66,19 @@ export default function FighterSlideFour({ onSlideChange }: FighterSlideProps) {
         onSlideChange(swiper.realIndex);
       }}
     >
-      {SUGA_MERAB.map((sm, idx) => (
+      {TOPURIA_HOLLOWAY.map((th, idx) => (
         <SwiperSlide key={idx}>
           <div className="flex items-center justify-center">
             <Image
-              src={sm.fighter_two}
-              alt={sm.name}
+              src={th.fighter_two}
+              alt={th.name}
               width={230}
               height={230}
               className="absolute right-10"
             />
             <Image
-              src={sm.fighter_one}
-              alt={sm.name}
+              src={th.fighter_one}
+              alt={th.name}
               width={230}
               height={230}
               className="relative right-16 z-10"

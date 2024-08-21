@@ -7,18 +7,16 @@ import { Navigation } from "swiper/modules";
 
 import Image from "next/image";
 import {
-  Aoriqileng,
-  Bahamondes,
-  Borjas,
-  Chairez,
-  Merab,
-  Osbourne,
-  Ribovic,
-  Rodriguez,
-  Rosas,
-  SugaSean,
-  Torres,
-  Zellhubner,
+  Aldo,
+  Bautista,
+  Buckley,
+  Dolidze,
+  Evloev,
+  Holland,
+  Pereira,
+  Rountree,
+  Sterling,
+  Thompson,
 } from "@/assets/upcoming";
 
 type OnSlideChange = (index: number) => void;
@@ -27,41 +25,35 @@ interface FighterSlideProps {
   onSlideChange: OnSlideChange;
 }
 
-const SUGA_MERAB = [
+const PEREIRA_ROUNTREE = [
   {
-    name: "SUGA VS MERAB",
-    fighter_one: SugaSean,
-    fighter_two: Merab,
+    name: "PEREIRA VS ROUNTREE",
+    fighter_one: Pereira,
+    fighter_two: Rountree,
   },
   {
-    name: "RAUL VS RODRIGUEZ",
-    fighter_one: Rosas,
-    fighter_two: Rodriguez,
+    name: "ALDO VS BAUTISTA",
+    fighter_one: Aldo,
+    fighter_two: Bautista,
   },
   {
-    name: "AORIQILENG VS BAHAMONDES",
-    fighter_one: Aoriqileng,
-    fighter_two: Bahamondes,
+    name: "BUCKLEY VS DOLIDZE",
+    fighter_one: Buckley,
+    fighter_two: Dolidze,
   },
   {
-    name: "BORJAS VS CHAIREZ",
-    fighter_one: Borjas,
-    fighter_two: Chairez,
+    name: "EVLOEV VS HOLLAND",
+    fighter_one: Evloev,
+    fighter_two: Holland,
   },
   {
-    name: "OSBOURNE VS RIBOVICS",
-    fighter_one: Osbourne,
-    fighter_two: Ribovic,
-  },
-
-  {
-    name: "TORRES VS ZELLHUBNER",
-    fighter_one: Torres,
-    fighter_two: Zellhubner,
+    name: "STERLING VS THOMPSON",
+    fighter_one: Sterling,
+    fighter_two: Thompson,
   },
 ];
 
-export default function FighterSlideFour({ onSlideChange }: FighterSlideProps) {
+export default function FighterSlideFive({ onSlideChange }: FighterSlideProps) {
   return (
     <Swiper
       navigation={true}
@@ -74,19 +66,19 @@ export default function FighterSlideFour({ onSlideChange }: FighterSlideProps) {
         onSlideChange(swiper.realIndex);
       }}
     >
-      {SUGA_MERAB.map((sm, idx) => (
+      {PEREIRA_ROUNTREE.map((pr, idx) => (
         <SwiperSlide key={idx}>
           <div className="flex items-center justify-center">
             <Image
-              src={sm.fighter_two}
-              alt={sm.name}
+              src={pr.fighter_two}
+              alt={pr.name}
               width={230}
               height={230}
               className="absolute right-10"
             />
             <Image
-              src={sm.fighter_one}
-              alt={sm.name}
+              src={pr.fighter_one}
+              alt={pr.name}
               width={230}
               height={230}
               className="relative right-16 z-10"
