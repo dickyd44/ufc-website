@@ -3,32 +3,32 @@
 @tailwind utilities;
 
 .swiper-wrapper {
-  height: 150px;
+  height: 150px !important;
 }
 
 /* Styles for navigation buttons */
 .swiper-button-next,
 .swiper-button-prev {
-  width: 50px; /* Adjust size as needed */
-  height: 50px; /* Adjust size as needed */
-  border: 0.5px solid rgba(0, 0, 0, 0.5); /* Background color */
-  border-radius: 5%; /* Makes the buttons circular */
-  color: gray; /* Arrow color */
-  z-index: 10; /* Ensure buttons are above slides */
+  width: 50px !important; /* Adjust size as needed */
+  height: 50px !important; /* Adjust size as needed */
+  border: 0.5px solid rgba(0, 0, 0, 0.5) !important; /* Background color */
+  border-radius: 5% !important; /* Makes the buttons circular */
+  color: gray !important; /* Arrow color */
+  z-index: 10 !important; /* Ensure buttons are above slides */
 }
 
 /* Styles for the arrow icons */
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 24px; /* Adjust font size of arrow icons */
-  line-height: 50px; /* Center align arrows vertically */
+  font-size: 24px !important; /* Adjust font size of arrow icons */
+  line-height: 50px !important; /* Center align arrows vertically */
 }
 
 /* Positioning of navigation buttons */
 .swiper-button-next {
-  right: 10px; /* Adjust as needed */
+  right: 10px !important; /* Adjust as needed */
 }
 
 .swiper-button-prev {
-  left: 10px; /* Adjust as needed */
+  left: 10px !important; /* Adjust as needed */
 }
