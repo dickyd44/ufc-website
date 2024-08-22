@@ -7,7 +7,7 @@ import {
   News15,
   News16,
   News9,
-} from "@/assets/trending/road-title";
+} from "@/assets/home/trending/road-title";
 import Image from "next/image";
 import React from "react";
 
@@ -128,7 +128,7 @@ export default function RoadTitle() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
           <div className="relative h-full pb-16 uppercase border border-slate-200 rounded-sm shadow">
             <div className="w-full">
               <Image

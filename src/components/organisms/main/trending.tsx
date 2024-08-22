@@ -1,4 +1,4 @@
-import { Adesanya, Plessis, Ufc305 } from "@/assets/trending/match";
+import { Adesanya, Plessis, Ufc305 } from "@/assets/home/trending/match";
 import {
   News1,
   News2,
@@ -9,7 +9,7 @@ import {
   News7,
   News8,
   SponsorBox,
-} from "@/assets/trending/trending-now";
+} from "@/assets/home/trending/trending-now";
 import Image from "next/image";
 import React from "react";
 

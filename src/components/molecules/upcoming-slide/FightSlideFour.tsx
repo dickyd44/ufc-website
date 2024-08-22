@@ -82,7 +82,7 @@ export default function FighterSlideFour({ onSlideChange }: FighterSlideProps) {
               alt={sm.name}
               width={230}
               height={230}
-              className="absolute right-10"
+              className="absolute right-0 md:right-10"
             />
             <Image
               src={sm.fighter_one}

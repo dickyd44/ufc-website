@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  xperimental: { esmExternals: "loose" },
+  experimental: { esmExternals: "loose" },
 };
 
 export default nextConfig;

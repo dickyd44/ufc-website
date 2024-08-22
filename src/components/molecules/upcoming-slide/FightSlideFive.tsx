@@ -74,7 +74,7 @@ export default function FighterSlideFive({ onSlideChange }: FighterSlideProps) {
               alt={pr.name}
               width={230}
               height={230}
-              className="absolute right-10"
+              className="absolute right-0 md:right-10"
             />
             <Image
               src={pr.fighter_one}

@@ -1,4 +1,4 @@
-import { News10 } from "@/assets/trending/road-title";
+import { News10 } from "@/assets/home/trending/road-title";
 import Image from "next/image";
 import React from "react";
 

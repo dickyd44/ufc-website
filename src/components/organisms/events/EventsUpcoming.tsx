@@ -11,7 +11,7 @@ import FightNightOne from "./ufc-fight-night/FightNightOne";
 import FightNightTwo from "./ufc-fight-night/FightNightTwo";
 import FightNightThree from "./ufc-fight-night/FightNightThree";
 import FightNightFour from "./ufc-fight-night/FightNightFour";
-import { News15 } from "@/assets/trending/road-title";
+import { News15 } from "@/assets/home/trending/road-title";
 import FightNightFive from "./ufc-fight-night/FightNightFive";
 import FightNightSix from "./ufc-fight-night/FightNightSix";
 
@@ -39,7 +39,7 @@ export default function EventsUpcoming() {
         </div>
       </div>
 
-      <div className="container grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
         <div className="relative h-full pb-16 uppercase border border-slate-200 rounded-sm shadow">
           <div className="w-full">
             <Image
