@@ -7,13 +7,8 @@ import {
   UfcFightPass,
 } from "@/assets/upcoming";
 import Image from "next/image";
-import FightNightOne from "./ufc-fight-night/FightNightOne";
-import FightNightTwo from "./ufc-fight-night/FightNightTwo";
-import FightNightThree from "./ufc-fight-night/FightNightThree";
-import FightNightFour from "./ufc-fight-night/FightNightFour";
 import { News15 } from "@/assets/home/trending/road-title";
-import FightNightFive from "./ufc-fight-night/FightNightFive";
-import FightNightSix from "./ufc-fight-night/FightNightSix";
+import AllFightPast from "./ufc-fight-past";
 
 export default function EventsPast() {
   return (
@@ -26,12 +21,7 @@ export default function EventsPast() {
         <p className="text-sm my-20">8 EVENTS</p>
       </div>
 
-      <FightNightOne />
-      <FightNightTwo />
-      <FightNightFour />
-      <FightNightThree />
-      <FightNightFive />
-      <FightNightSix />
+      <AllFightPast />
 
       <div className="flex justify-center my-32">
         <div className="flex items-center justify-center uppercase w-52 h-16 shadow hover:bg-light cursor-pointer bg-white border border-slate-200">

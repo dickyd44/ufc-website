@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Ufc308logo } from "@/assets/upcoming";
 import Image from "next/image";
 import TicketsSlideFive from "@/components/molecules/events/tickets-slide/TicketsSlideFive";
+import ButtonTicketsVIP from "@/components/atoms/events/button-tickets-vip";
 
 type OnSlideChange = (index: number) => void;
 
@@ -57,14 +58,8 @@ export default function TicketsNightFive() {
         <p className="text-base font-bold">{currentEventThree.event}</p>
         <p className="text-slate-400">{currentEventThree.location}</p>
       </div>
-      <div className="grid gap-4">
-        <div className="flex items-center justify-center uppercase w-44 h-14 shadow hover:bg-rose-700 cursor-pointer bg-red border border-slate-200 text-sm text-white">
-          buy tickets
-        </div>
-        <div className="flex items-center justify-center uppercase w-44 h-14 shadow hover:bg-light cursor-pointer bg-white border border-slate-200 text-sm">
-          vip experience
-        </div>
-      </div>
+
+      <ButtonTicketsVIP />
     </div>
   );
 }
