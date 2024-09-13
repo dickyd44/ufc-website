@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { PT_Sans_Narrow } from "next/font/google";
+import { Rubik } from "next/font/google";
 import "./globals.css";
 import { AppFooter, AppNavbar } from "@/layouts";
 
-const narrow = PT_Sans_Narrow({
+const rubik = Rubik({
   subsets: ["latin"],
-  weight: "700",
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={narrow.className}>
+      <body className={rubik.className}>
         <AppNavbar />
         {children}
         <AppFooter />

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { UfcFightNight } from "@/assets/upcoming";
 import Image from "next/image";
-import FighterSlideTwo from "@/components/molecules/upcoming-slide/FightSlideTwo";
+import FighterSlideTwo from "@/components/molecules/events/upcoming-slide/FightSlideTwo";
 
 type OnSlideChange = (index: number) => void;
 

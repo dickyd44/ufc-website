@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FighterSlideOne from "@/components/molecules/upcoming-slide/FighterSlideOne";
+import FighterSlideOne from "@/components/molecules/events/upcoming-slide/FighterSlideOne";
 import { UfcFightNight } from "@/assets/upcoming";
 import Image from "next/image";
 

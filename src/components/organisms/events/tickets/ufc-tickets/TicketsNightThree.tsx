@@ -1,55 +1,60 @@
+"use client";
 import React, { useState } from "react";
-import { Ufc308logo, UfcFightNight } from "@/assets/upcoming";
+import { UfcFightNight } from "@/assets/upcoming";
 import Image from "next/image";
-import FighterSlideFive from "@/components/molecules/upcoming-slide/FightSlideFive";
-import FighterSlideSix from "@/components/molecules/upcoming-slide/FightSlideSix";
+import TicketsSlideThree from "@/components/molecules/events/tickets-slide/TicketsSlideThree";
 
 type OnSlideChange = (index: number) => void;
 
-const TOPURIA_HOLLOWAY = [
+const ALLEN_CHARRIERE = [
   {
-    name: "TOPURIA VS HOLLOWAY",
+    name: "ALLEN VS CHARRIERE",
     event: "UFC APEX",
     location: "Las Vegas, NV United States",
   },
   {
-    name: "CHIMAEV VS WHITTAKER",
+    name: "CUNNINGHAM VS CUTABELA",
     event: "UFC APEX",
     location: "Las Vegas, NV United States",
   },
   {
-    name: "ANKALAEV VS RAKIC",
+    name: "FREVOLA VS IMAVOV",
     event: "UFC APEX",
     location: "Las Vegas, NV United States",
   },
   {
-    name: "GANE VS MAGOMEDOV",
+    name: "MOICANO VS WAITING",
     event: "UFC APEX",
     location: "Las Vegas, NV United States",
   },
   {
-    name: "VOLKOV VS BRUNNO",
+    name: "DENIS VS ZIAM",
     event: "UFC APEX",
     location: "Las Vegas, NV United States",
   },
 ];
 
-export default function FightNightSix() {
+export default function TicketsNightThree() {
   const [currentEventThree, setCurrentEventThree] = useState(
-    TOPURIA_HOLLOWAY[0]
+    ALLEN_CHARRIERE[0]
   );
 
   const handleSlideChange: OnSlideChange = (index: number) => {
-    setCurrentEventThree(TOPURIA_HOLLOWAY[index]);
+    setCurrentEventThree(ALLEN_CHARRIERE[index]);
   };
 
   return (
     <div className="container grid grid-cols-1 md:grid-cols-5 gap-8 h-auto place-items-center my-16">
       <div>
-        <Image src={Ufc308logo} alt="ufc-fight-night" width={90} height={90} />
+        <Image
+          src={UfcFightNight}
+          alt="ufc-fight-night"
+          width={120}
+          height={120}
+        />
       </div>
       <div className="w-full col-span-2">
-        <FighterSlideSix onSlideChange={handleSlideChange} />
+        <TicketsSlideThree onSlideChange={handleSlideChange} />
       </div>
       <div>
         {/* i need change name in here */}
@@ -58,11 +63,11 @@ export default function FightNightSix() {
         <p className="text-slate-400">{currentEventThree.location}</p>
       </div>
       <div className="grid gap-4">
-        <div className="flex items-center justify-center uppercase w-44 h-14 shadow hover:bg-light cursor-pointer bg-white border border-slate-200 text-sm">
-          how to watch
+        <div className="flex items-center justify-center uppercase w-44 h-14 shadow hover:bg-rose-700 cursor-pointer bg-red border border-slate-200 text-sm text-white">
+          buy tickets
         </div>
         <div className="flex items-center justify-center uppercase w-44 h-14 shadow hover:bg-light cursor-pointer bg-white border border-slate-200 text-sm">
-          tickets
+          vip experience
         </div>
       </div>
     </div>

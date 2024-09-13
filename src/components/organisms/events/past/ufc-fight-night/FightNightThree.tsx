@@ -1,54 +1,51 @@
 import React, { useState } from "react";
-import { Ufc308logo, UfcFightNight } from "@/assets/upcoming";
+import { UfcFightNight } from "@/assets/upcoming";
 import Image from "next/image";
-import FighterSlideFive from "@/components/molecules/upcoming-slide/FightSlideFive";
+import FighterPastThree from "@/components/molecules/events/past/FightPastThree";
 
-type OnSlideChange = (index: number) => void;
-
-const PEREIRA_ROUNTREE = [
+const ALLEN_CHARRIERE = [
   {
-    name: "PEREIRA VS ROUNTREE",
+    name: "ALLEN VS CHARRIERE",
     event: "UFC APEX",
     location: "Las Vegas, NV United States",
   },
   {
-    name: "ALDO VS BAUTISTA",
+    name: "CUNNINGHAM VS CUTABELA",
     event: "UFC APEX",
     location: "Las Vegas, NV United States",
   },
   {
-    name: "BUCKLEY VS DOLIDZE",
+    name: "FREVOLA VS IMAVOV",
     event: "UFC APEX",
     location: "Las Vegas, NV United States",
   },
   {
-    name: "EVLOEV VS HOLLAND",
+    name: "MOICANO VS WAITING",
     event: "UFC APEX",
     location: "Las Vegas, NV United States",
   },
   {
-    name: "STERLING VS THOMPSON",
+    name: "DENIS VS ZIAM",
     event: "UFC APEX",
     location: "Las Vegas, NV United States",
   },
 ];
 
-export default function FightNightFive() {
-  const [currentEventThree, setCurrentEventThree] = useState(
-    PEREIRA_ROUNTREE[0]
-  );
-
-  const handleSlideChange: OnSlideChange = (index: number) => {
-    setCurrentEventThree(PEREIRA_ROUNTREE[index]);
-  };
+export default function FightNightThree() {
+  const [currentEventThree] = useState(ALLEN_CHARRIERE[0]);
 
   return (
     <div className="container grid grid-cols-1 md:grid-cols-5 gap-8 h-auto place-items-center my-16">
       <div>
-        <Image src={Ufc308logo} alt="ufc-fight-night" width={90} height={90} />
+        <Image
+          src={UfcFightNight}
+          alt="ufc-fight-night"
+          width={120}
+          height={120}
+        />
       </div>
       <div className="w-full col-span-2">
-        <FighterSlideFive onSlideChange={handleSlideChange} />
+        <FighterPastThree />
       </div>
       <div>
         {/* i need change name in here */}

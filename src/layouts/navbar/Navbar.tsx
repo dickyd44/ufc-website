@@ -55,9 +55,11 @@ const listEvent = [
   },
   {
     list: "past",
+    link: "/events/past",
   },
   {
     list: "tickets",
+    link: "/events/tickets",
   },
   {
     list: "vip experience",

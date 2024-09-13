@@ -1,59 +1,55 @@
+"use client";
 import React, { useState } from "react";
-import { UfcFightNight } from "@/assets/upcoming";
+import { Ufc308logo } from "@/assets/upcoming";
 import Image from "next/image";
-import FighterSlideThree from "@/components/molecules/upcoming-slide/FightSlideThree";
+import TicketsSlideFive from "@/components/molecules/events/tickets-slide/TicketsSlideFive";
 
 type OnSlideChange = (index: number) => void;
 
-const ALLEN_CHARRIERE = [
+const PEREIRA_ROUNTREE = [
   {
-    name: "ALLEN VS CHARRIERE",
+    name: "PEREIRA VS ROUNTREE",
     event: "UFC APEX",
     location: "Las Vegas, NV United States",
   },
   {
-    name: "CUNNINGHAM VS CUTABELA",
+    name: "ALDO VS BAUTISTA",
     event: "UFC APEX",
     location: "Las Vegas, NV United States",
   },
   {
-    name: "FREVOLA VS IMAVOV",
+    name: "BUCKLEY VS DOLIDZE",
     event: "UFC APEX",
     location: "Las Vegas, NV United States",
   },
   {
-    name: "MOICANO VS WAITING",
+    name: "EVLOEV VS HOLLAND",
     event: "UFC APEX",
     location: "Las Vegas, NV United States",
   },
   {
-    name: "DENIS VS ZIAM",
+    name: "STERLING VS THOMPSON",
     event: "UFC APEX",
     location: "Las Vegas, NV United States",
   },
 ];
 
-export default function FightNightThree() {
+export default function TicketsNightFive() {
   const [currentEventThree, setCurrentEventThree] = useState(
-    ALLEN_CHARRIERE[0]
+    PEREIRA_ROUNTREE[0]
   );
 
   const handleSlideChange: OnSlideChange = (index: number) => {
-    setCurrentEventThree(ALLEN_CHARRIERE[index]);
+    setCurrentEventThree(PEREIRA_ROUNTREE[index]);
   };
 
   return (
     <div className="container grid grid-cols-1 md:grid-cols-5 gap-8 h-auto place-items-center my-16">
       <div>
-        <Image
-          src={UfcFightNight}
-          alt="ufc-fight-night"
-          width={120}
-          height={120}
-        />
+        <Image src={Ufc308logo} alt="ufc-fight-night" width={90} height={90} />
       </div>
       <div className="w-full col-span-2">
-        <FighterSlideThree onSlideChange={handleSlideChange} />
+        <TicketsSlideFive onSlideChange={handleSlideChange} />
       </div>
       <div>
         {/* i need change name in here */}
@@ -62,11 +58,11 @@ export default function FightNightThree() {
         <p className="text-slate-400">{currentEventThree.location}</p>
       </div>
       <div className="grid gap-4">
-        <div className="flex items-center justify-center uppercase w-44 h-14 shadow hover:bg-light cursor-pointer bg-white border border-slate-200 text-sm">
-          how to watch
+        <div className="flex items-center justify-center uppercase w-44 h-14 shadow hover:bg-rose-700 cursor-pointer bg-red border border-slate-200 text-sm text-white">
+          buy tickets
         </div>
         <div className="flex items-center justify-center uppercase w-44 h-14 shadow hover:bg-light cursor-pointer bg-white border border-slate-200 text-sm">
-          tickets
+          vip experience
         </div>
       </div>
     </div>

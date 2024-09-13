@@ -27,7 +27,7 @@ interface FighterSlideProps {
 
 const TOPURIA_HOLLOWAY = [
   {
-    name: "TOPURIA VS HOLLOWAY",
+    name: "HOLLOWAY VS TOPURIA",
     fighter_one: Holloway,
     fighter_two: Topuria,
   },
@@ -53,7 +53,7 @@ const TOPURIA_HOLLOWAY = [
   },
 ];
 
-export default function FighterSlideSix({ onSlideChange }: FighterSlideProps) {
+export default function TicketsSlideSix({ onSlideChange }: FighterSlideProps) {
   return (
     <Swiper
       navigation={true}

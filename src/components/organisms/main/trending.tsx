@@ -21,7 +21,7 @@ export default function Trending() {
           <Image src={Plessis} alt="Plessis" width={70} />
           <div className="flex flex-col justify-center items-center mx-4">
             <Image src={Ufc305} alt="ufc-305" width={75} />
-            <p className="uppercase text-xl font-bold max-w-28 mt-3 text-center leading-tight">
+            <p className="uppercase text-base font-bold max-w-28 mt-3 text-center leading-tight">
               du plessis vs adesanya
             </p>
           </div>

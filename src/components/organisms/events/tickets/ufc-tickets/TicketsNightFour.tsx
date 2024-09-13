@@ -1,7 +1,8 @@
+"use client";
 import React, { useState } from "react";
 import { UfcFightNight } from "@/assets/upcoming";
 import Image from "next/image";
-import FighterSlideFour from "@/components/molecules/upcoming-slide/FightSlideFour";
+import TicketsSlideFour from "@/components/molecules/events/tickets-slide/TicketsSlideFour";
 
 type OnSlideChange = (index: number) => void;
 
@@ -39,7 +40,7 @@ const SUGA_MERAB = [
   },
 ];
 
-export default function FightNightFour() {
+export default function TicketsNightFour() {
   const [currentEventThree, setCurrentEventThree] = useState(SUGA_MERAB[0]);
 
   const handleSlideChange: OnSlideChange = (index: number) => {
@@ -57,7 +58,7 @@ export default function FightNightFour() {
         />
       </div>
       <div className="w-full col-span-2">
-        <FighterSlideFour onSlideChange={handleSlideChange} />
+        <TicketsSlideFour onSlideChange={handleSlideChange} />
       </div>
       <div>
         {/* i need change name in here */}
@@ -66,11 +67,11 @@ export default function FightNightFour() {
         <p className="text-slate-400">{currentEventThree.location}</p>
       </div>
       <div className="grid gap-4">
-        <div className="flex items-center justify-center uppercase w-44 h-14 shadow hover:bg-light cursor-pointer bg-white border border-slate-200 text-sm">
-          how to watch
+        <div className="flex items-center justify-center uppercase w-44 h-14 shadow hover:bg-rose-700 cursor-pointer bg-red border border-slate-200 text-sm text-white">
+          buy tickets
         </div>
         <div className="flex items-center justify-center uppercase w-44 h-14 shadow hover:bg-light cursor-pointer bg-white border border-slate-200 text-sm">
-          tickets
+          vip experience
         </div>
       </div>
     </div>
