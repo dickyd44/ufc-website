@@ -3,6 +3,7 @@ import { Ufc308logo, UfcFightNight } from "@/assets/upcoming";
 import Image from "next/image";
 import FighterSlideFive from "@/components/molecules/events/upcoming-slide/FightSlideFive";
 import FighterSlideSix from "@/components/molecules/events/upcoming-slide/FightSlideSix";
+import { WatchTickets } from "@/components/atoms/events/button-upcoming-past";
 
 type OnSlideChange = (index: number) => void;
 
@@ -57,14 +58,8 @@ export default function FightNightSix() {
         <p className="text-base font-bold">{currentEventThree.event}</p>
         <p className="text-slate-400">{currentEventThree.location}</p>
       </div>
-      <div className="grid gap-4">
-        <div className="flex items-center justify-center uppercase w-44 h-14 shadow hover:bg-light cursor-pointer bg-white border border-slate-200 text-sm">
-          how to watch
-        </div>
-        <div className="flex items-center justify-center uppercase w-44 h-14 shadow hover:bg-light cursor-pointer bg-white border border-slate-200 text-sm">
-          tickets
-        </div>
-      </div>
+
+      <WatchTickets />
     </div>
   );
 }

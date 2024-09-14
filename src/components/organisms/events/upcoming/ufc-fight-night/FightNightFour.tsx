@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { UfcFightNight } from "@/assets/upcoming";
 import Image from "next/image";
 import FighterSlideFour from "@/components/molecules/events/upcoming-slide/FightSlideFour";
+import { WatchTickets } from "@/components/atoms/events/button-upcoming-past";
 
 type OnSlideChange = (index: number) => void;
 
@@ -65,14 +66,8 @@ export default function FightNightFour() {
         <p className="text-base font-bold">{currentEventThree.event}</p>
         <p className="text-slate-400">{currentEventThree.location}</p>
       </div>
-      <div className="grid gap-4">
-        <div className="flex items-center justify-center uppercase w-44 h-14 shadow hover:bg-light cursor-pointer bg-white border border-slate-200 text-sm">
-          how to watch
-        </div>
-        <div className="flex items-center justify-center uppercase w-44 h-14 shadow hover:bg-light cursor-pointer bg-white border border-slate-200 text-sm">
-          tickets
-        </div>
-      </div>
+
+      <WatchTickets />
     </div>
   );
 }
